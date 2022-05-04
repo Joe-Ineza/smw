@@ -1,15 +1,11 @@
-const togglePassword = document.querySelector('#togglePassword');
-const password = document.querySelector('#password');
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
 
-togglePassword.addEventListener('click', function () {
-    // toggle the type attribute
-    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-    password.setAttribute('type', type);
-    // toggle the eye / eye slash icon
-    this.classList.toggle('bi-eye');
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
 });
 
-/*const form = document.querySelector("form");
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-        });*/
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});

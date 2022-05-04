@@ -5,45 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/myscrpt.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+   
     
-    <title>signup</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>ChatMe</title>
 </head>
 <body>
-    <div class="container">
-            <h1>Instagram</h1>
-            <p>Sign up to see photos and videos from your friends.</p>
-            <p><a href="#"  class="login_facebook">Log in with Facebook</a> </p>
-            <p>OR</p>
-            <form action="">
-                <label for="mobilenumber or email">
-                    <input type="text" placeholder="Mobile Number or Email" id="mobile_email" name="Mobile_email" />
-                </label>
-                <br>
-                <label for="fullname">
-                    <input type="text" placeholder="Full Name" id="fullname" name="fullname"/>
-                </label>
-                <br>
-                <label for="username">
-                    <input type="text" placeholder="Username" id="username" name="username"/>
-                </label>
-                <br>
-                <label for="password">
-                    <input type="password" placeholder="Password" id="password" name="password" />
-                    <i class="bi bi-eye-slash" id="togglePassword"></i>
-                </label>
-                <br>
-
-                <button type="submit"  class="submit"></button>
-                <p>By signing up, you agree to our Terms,<br> Data Policy and Cookies Policy.</p>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="text"
+                placeholder="UserName" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Sign Up</button>
             </form>
-            <p>Have an account? <a href="#">Log in</a></p>
-            <p>Get the app.</p>
-            <!-- <span>
-                <a href="#" target="_blank"><img src="images/Applestore logo.png" class="getit_app" alt=""></a>
-                <a href="#" target="_blank"><img src="images/Googleplaystorelogo.png" class="getit_app" alt=""></a>
-            </span> -->
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email text" placeholder="Email or UserName" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start chatting with your friends</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    <footer>
+        <p>
+           
+                &copy;2022 ChatMe
+        </p>
+    </footer>
+    <script src="myscrpt.js"></script>
 </body>
 </html>
